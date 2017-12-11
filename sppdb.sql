@@ -20,7 +20,7 @@ CREATE TABLE `kotas` (
 --
 
 INSERT INTO `kotas` (`id`, `nama_kota`, `created_at`, `updated_at`) VALUES
-(1, 'Malang', '2016-12-01 20:57:27', '2016-12-01 20:57:27');
+(1, 'Surabaya', '2017-12-05 20:57:27', '2017-12-05 20:57:27');
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE `password_resets` (
 --
 
 CREATE TABLE `places` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` varchar(50) UNSIGNED NOT NULL,
   `kota_id` int(10) UNSIGNED NOT NULL DEFAULT '1',
   `nama_tempat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `deskripsi_tempat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE `places` (
 --
 
 INSERT INTO `places` (`id`, `kota_id`, `nama_tempat`, `deskripsi_tempat`, `photolink`, `estimasi_biaya`, `durasi_wisata`, `status`, `created_at`, `updated_at`) VALUES
-(7, 0, 'Alun-alun Batu', 'Disini anda dapat menemukan berbagai macam hiburan menarik, cocok untuk jalan-jalan', '/images/2016-12-02-10-33-35-malang3.jpg', '300000', '120', 1, '2016-12-01 23:33:16', '2016-12-02 03:33:55'),
+(7, 0, 'Tugu Pahlawan', 'Disini anda dapat menemukan berbagai macam hiburan menarik, cocok untuk jalan-jalan', '/images/2016-12-02-10-33-35-malang3.jpg', '300000', '120', 1, '2016-12-01 23:33:16', '2016-12-02 03:33:55'),
 (8, 0, 'Gunung Bromo', 'Pemandangan disini tidak ada duanya', '/images/2016-12-02-06-33-47-malang.jpg', '2000000', '360', 1, '2016-12-01 23:33:47', '2016-12-01 23:33:47');
 
 -- --------------------------------------------------------
